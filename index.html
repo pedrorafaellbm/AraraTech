@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Eletrônicos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Cabeçalho -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Torna o nome da loja interativo e adiciona um logo ao lado -->
+            <a href="#" class="flex items-center space-x-2">
+                <!-- O tamanho do logo foi ajustado para 100x100 pixels, deixando-o ainda mais visível -->
+                <img src="imagens/logo.png" alt="Logo da TecnoShop" class="h-[100px] w-[100px] rounded-md transition-transform hover:scale-110">
+                <h1 class="text-2xl font-bold text-teal-600">TecnoShop</h1>
+            </a>
+            <div class="flex-grow max-w-lg mx-4">
+                <input id="search-input" type="text" placeholder="Buscar produtos..." class="w-full px-4 py-2 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-teal-500 transition-colors">
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="favorites-button" class="relative p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-500" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                    <span id="favorites-count" class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full transform translate-x-1/2 -translate-y-1/2">0</span>
+                </button>
+                <button id="cart-button" class="relative p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                    </svg>
+                    <span id="cart-count" class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full transform translate-x-1/2 -translate-y-1/2">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-bold text-center mb-8 text-teal-700">Produtos de Informática e Jogos</h2>
+        <div id="product-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Cards de produtos serão inseridos aqui pelo JavaScript -->
+        </div>
+
+        <!-- Paginação -->
+        <div id="pagination-container" class="flex justify-center mt-8 space-x-2">
+            <!-- Botões de paginação serão inseridos aqui pelo JavaScript -->
+        </div>
+    </main>
+
+    <!-- Modal do Carrinho -->
+    <div id="cart-modal" class="hidden fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center z-50">
+        <div class="bg-white rounded-xl shadow-xl p-6 w-full max-w-md relative">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl leading-none">&times;</button>
+            <h3 class="text-2xl font-bold mb-4">Seu Carrinho</h3>
+            <div id="cart-items" class="space-y-4 mb-6 max-h-80 overflow-y-auto">
+                <!-- Itens do carrinho serão inseridos aqui -->
+            </div>
+            <div class="flex justify-between items-center font-bold text-lg mb-4 border-t pt-4">
+                <span>Total:</span>
+                <span id="cart-total" class="text-teal-600">R$ 0,00</span>
+            </div>
+            <button id="checkout-button" class="w-full bg-teal-600 text-white font-bold py-3 rounded-lg hover:bg-teal-700 transition-colors">
+                Finalizar Compra
+            </button>
+        </div>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
