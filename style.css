@@ -51,17 +51,42 @@ body {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-/* Estilos para a imagem 'fora.png' para que ela ocupe melhor o card */
-.product-card .relative .absolute {
+/* Estilo para a imagem do carrossel */
+.carousel-img {
+    height: 350px;
+    object-fit: cover; 
+    border-radius: 0.75rem;
+}
+
+/* Ajustes para o texto do carrossel ficar mais visível */
+/* Estilos para o texto do carrossel ficar mais visível e centralizado */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0.5rem;
+    padding: 0.15rem 1rem;
+    
+    /* Propriedades para centralizar o texto */
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;      /* Aumenta o tamanho para 80% do contêiner */
-    height: auto;
-    opacity: 0.9;
-    z-index: 10;
+    text-align: center;
+    width: 90%;
 }
 
+.carousel-caption h5 {
+    color: #2dd4bf;
+    font-weight: 700;
+}
+.carousel-caption p {
+    color: #e5e7eb;
+}
+
+.carousel-caption h1 {
+    color: #2dd4bf; /* Cor azul claro */
+    font-weight: 700;
+    font-size: 2.5rem; /* Ajuste este valor para o tamanho que preferir! */
+}
 
 /* Estilos para a mensagem de alerta customizada */
 .message-box {

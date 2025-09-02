@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Mouse de alta precisão com 11 botões programáveis e peso ajustável.",
             price: 299.00,
             category: "periféricos",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Mouse+Logitech"
+            image: "imagens/mouse.png"
         },
         {
             id: 2,
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Teclado mecânico com switches Cherry MX, iluminação RGB e durabilidade extrema.",
             price: 450.00,
             category: "periféricos",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Teclado+HyperX"
+            image: "imagens/teclado.png"
         },
         {
             id: 3,
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Monitor curvo de 27 polegadas com 144Hz e tempo de resposta de 1ms.",
             price: 1899.90,
             category: "hardware",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Monitor+Samsung"
+            image: "imagens/monitor.png"
         },
         {
             id: 4,
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Headset com som surround 7.1, microfone removível e construção em metal.",
             price: 220.00,
             category: "acessórios",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Headset+Redragon"
+            image: "imagens/headset.png"
         },
         {
             id: 5,
@@ -39,7 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "GPU de última geração para rodar todos os jogos em 4K com alto desempenho.",
             price: 4500.00,
             category: "hardware",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Placa+RTX"
+            image: "imagens/placa.png",
+            outOfStock: true
         },
         {
             id: 6,
@@ -47,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Armazenamento ultrarrápido para carregamento instantâneo de jogos e programas.",
             price: 650.00,
             category: "hardware",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=SSD+NVMe+1TB"
+            image: "imagens/ssd.png"
         },
         {
             id: 7,
@@ -55,15 +56,15 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Webcam Full HD 1080p para streaming e videochamadas com clareza profissional.",
             price: 350.00,
             category: "acessórios",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Webcam+Logitech"
+            image: "imagens/webcam.png"
         },
         {
             id: 8,
             name: "Cadeira Gamer ThunderX3",
-            description: "Cadeira ergonómica com apoio lombar e de cabeça ajustáveis para longas sessões de jogo.",
+            description: "Cadeira ergonômica com apoio lombar e de cabeça ajustáveis para longas sessões de jogo.",
             price: 990.00,
             category: "acessórios",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Cadeira+Gamer"
+            image: "imagens/cadeira.png"
         },
         {
             id: 9,
@@ -71,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "O processador mais rápido para multitarefas e jogos exigentes.",
             price: 3200.00,
             category: "hardware",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Processador+i9"
+            image: "imagens/processador.png"
         },
         {
             id: 10,
@@ -79,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Mousepad gigante para total liberdade de movimento e base antiderrapante.",
             price: 85.00,
             category: "periféricos",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Mousepad+XXL"
+            image: "imagens/mousepad.png"
         },
         {
             id: 11,
@@ -87,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Módulo de memória de alta velocidade para jogos e aplicações de performance.",
             price: 580.00,
             category: "hardware",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Memoria+RAM"
+            image: "imagens/ram.png"
         },
         {
             id: 12,
@@ -95,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Fonte modular com certificação 80 Plus Gold para alta eficiência e segurança.",
             price: 620.00,
             category: "hardware",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Fonte+750W"
+            image: "imagens/fonte.png"
         },
         {
             id: 13,
@@ -103,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Placa-mãe de alta performance com suporte a CPU e RAM de última geração.",
             price: 1500.00,
             category: "hardware",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Placa-Mãe+ASUS"
+            image: "imagens/placamae.png"
         },
         {
             id: 14,
@@ -111,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Sistema de arrefecimento líquido para manter a temperatura do CPU baixa.",
             price: 750.00,
             category: "hardware",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Cooler+Corsair"
+            image: "imagens/cooler.png"
         },
         {
             id: 15,
@@ -119,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Gabinete com design elegante, vidro temperado e excelente fluxo de ar.",
             price: 890.00,
             category: "hardware",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Gabinete+NZXT"
+            image: "imagens/gabinete.png"
         },
         {
             id: 16,
@@ -127,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Experiência imersiva de jogo com óculos VR de alta resolução.",
             price: 2500.00,
             category: "acessórios",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Óculos+VR"
+            image: "imagens/vr.png"
         },
         {
             id: 17,
@@ -135,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Volante de simulação de corrida com Force Feedback para uma experiência realista.",
             price: 1300.00,
             category: "acessórios",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Volante+Logitech"
+            image: "imagens/volante.png"
         },
         {
             id: 18,
@@ -143,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Controle de voo para simuladores de avião e jogos de espaço.",
             price: 550.00,
             category: "acessórios",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Joystick+Logitech"
+            image: "imagens/joystick.png"
         },
         {
             id: 19,
@@ -151,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Controle sem fio para jogos no PC com design ergonômico.",
             price: 320.00,
             category: "periféricos",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Controle+Xbox"
+            image: "imagens/controle.png"
         },
         {
             id: 20,
@@ -159,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Headset com som espacial, microfone de alta clareza e bateria de longa duração.",
             price: 680.00,
             category: "acessórios",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Headset+Razer"
+            image: "imagens/headset-razer.png"
         },
         {
             id: 21,
@@ -167,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Roteador de alta velocidade para minimizar o lag em jogos online.",
             price: 1200.00,
             category: "acessórios",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Roteador+ASUS"
+            image: "imagens/roteador.png"
         },
         {
             id: 22,
@@ -175,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Webcam Full HD 1080p para streaming e videochamadas com clareza profissional.",
             price: 350.00,
             category: "acessórios",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Webcam+Logitech"
+            image: "imagens/webcam-fullhd.png"
         },
         {
             id: 23,
@@ -183,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Melhora a qualidade do áudio do seu PC com esta placa de som de alta fidelidade.",
             price: 450.00,
             category: "periféricos",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Placa+de+Som"
+            image: "imagens/placadesom.png"
         },
         {
             id: 24,
@@ -191,11 +192,10 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Conjunto de ventoinhas com iluminação RGB personalizável para o seu gabinete.",
             price: 250.00,
             category: "hardware",
-            image: "https://placehold.co/400x300/1f2937/c9d1d9?text=Ventoinhas+RGB"
+            image: "imagens/ventoinhas.png"
         }
     ];
 
-    // Variáveis de estado e elementos DOM
     let cart = [];
     let favorites = [];
     const productsPerPage = 8;
@@ -217,10 +217,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartTotalSpan = document.getElementById('cart-total');
     const checkoutButton = document.getElementById('checkout-button');
 
-    // Funções de formatação e utilitárias
     const formatPrice = (price) => `R$ ${price.toFixed(2).replace('.', ',')}`;
 
-    // Funções de UI
     const showMessageBox = (title, message) => {
         const messageBox = document.createElement('div');
         messageBox.className = 'message-box';
@@ -237,16 +235,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Renderiza um card de produto
     const renderProductCard = (product) => {
         const isFavorited = favorites.some(item => item.id === product.id);
         const card = document.createElement('div');
-        card.className = 'product-card flex flex-col items-center p-4 rounded-xl shadow-lg border border-gray-700 relative';
-        
+        card.className = `product-card flex flex-col items-center p-4 rounded-xl shadow-lg border border-gray-700 relative`;
+
         card.innerHTML = `
             <div class="relative w-full">
-                <img src="${product.image}" alt="${product.name}" class="rounded-md w-full h-48 object-cover mb-4">
-                <img src="imagens/fora.png" alt="Produto fora de estoque" class="absolute top-2 left-2 w-16 h-auto opacity-80">
+                <img src="imagens/fora.png" alt="Produto fora de estoque" class="rounded-md w-full h-48 object-cover mb-4">
             </div>
             <h3 class="text-xl font-semibold text-white mb-2 text-center">${product.name}</h3>
             <p class="text-gray-400 text-sm mb-4 text-center flex-grow">${product.description}</p>
@@ -269,13 +265,12 @@ document.addEventListener('DOMContentLoaded', () => {
         return card;
     };
 
-    // Renderiza todos os produtos na página
     const renderProducts = (productsToRender) => {
         productContainer.innerHTML = '';
         const start = (currentPage - 1) * productsPerPage;
         const end = start + productsPerPage;
         const productsOnPage = productsToRender.slice(start, end);
-        
+
         if (productsOnPage.length === 0) {
             productContainer.innerHTML = '<p class="text-center text-xl text-gray-400 col-span-full">Nenhum produto encontrado.</p>';
         }
@@ -286,7 +281,6 @@ document.addEventListener('DOMContentLoaded', () => {
         updatePaginationInfo(productsToRender.length);
     };
 
-    // Atualiza a informação de paginação
     const updatePaginationInfo = (totalProducts) => {
         const totalPages = Math.ceil(totalProducts / productsPerPage);
         pageInfoSpan.textContent = `Página ${currentPage} de ${totalPages}`;
@@ -294,7 +288,6 @@ document.addEventListener('DOMContentLoaded', () => {
         nextPageBtn.disabled = currentPage >= totalPages || totalPages === 0;
     };
 
-    // Lógica de pesquisa
     const handleSearch = () => {
         const query = searchInput.value.toLowerCase();
         filteredProducts = products.filter(product =>
@@ -302,11 +295,10 @@ document.addEventListener('DOMContentLoaded', () => {
             product.description.toLowerCase().includes(query) ||
             product.category.toLowerCase().includes(query)
         );
-        currentPage = 1; // Reseta para a primeira página após a pesquisa
+        currentPage = 1;
         renderProducts(filteredProducts);
     };
 
-    // Lógica de paginação
     prevPageBtn.addEventListener('click', () => {
         if (currentPage > 1) {
             currentPage--;
@@ -322,7 +314,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Lógica do carrinho
     const addToCart = (product) => {
         const existingItem = cart.find(item => item.id === product.id);
         if (existingItem) {
@@ -366,7 +357,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Lógica dos favoritos
     const toggleFavorite = (product) => {
         const isFavorited = favorites.some(item => item.id === product.id);
         if (isFavorited) {
@@ -375,14 +365,13 @@ document.addEventListener('DOMContentLoaded', () => {
             favorites.push(product);
         }
         updateFavoritesCount();
-        renderProducts(filteredProducts); // Re-renderiza para atualizar os ícones
+        renderProducts(filteredProducts);
     };
 
     const updateFavoritesCount = () => {
         favoritesCountSpan.textContent = favorites.length;
     };
 
-    // Event listener para o container de produtos, usando delegação de eventos
     productContainer.addEventListener('click', (event) => {
         const addToCartBtn = event.target.closest('.add-to-cart-btn');
         const addToFavoritesBtn = event.target.closest('.add-to-favorites-btn');
@@ -404,7 +393,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Event listener para os botões de remoção do carrinho
     cartItemsContainer.addEventListener('click', (e) => {
         if (e.target.closest('.remove-from-cart-btn')) {
             const productId = e.target.closest('.remove-from-cart-btn').dataset.id;
@@ -412,7 +400,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Lógica do modal
     cartButton.addEventListener('click', () => {
         cartModal.classList.remove('hidden');
         updateCartDisplay();
@@ -422,17 +409,15 @@ document.addEventListener('DOMContentLoaded', () => {
         cartModal.classList.add('hidden');
     });
 
-    // Fecha o modal se o utilizador clicar fora dele
     window.addEventListener('click', (e) => {
         if (e.target === cartModal) {
             cartModal.classList.add('hidden');
         }
     });
-    
-    // Lógica do botão de checkout
+
     checkoutButton.addEventListener('click', () => {
         if (cart.length > 0) {
-            cart = []; // Limpa o carrinho
+            cart = [];
             updateCartDisplay();
             cartModal.classList.add('hidden');
             showMessageBox('Compra Finalizada', 'Obrigado pela sua compra! O seu pedido foi processado.');
@@ -441,7 +426,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Inicia a aplicação
     renderProducts(filteredProducts);
     searchInput.addEventListener('input', handleSearch);
 });
